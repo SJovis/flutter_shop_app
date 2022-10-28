@@ -57,9 +57,7 @@ class ProductsOverviewScreen extends StatelessWidget {
           mainAxisSpacing: 10,
         ),
         itemBuilder: (ctx, i) => ProductItem(
-          id: loadedProducts[i].id,
-          title: loadedProducts[i].title,
-          imageUrl: loadedProducts[i].imageUrl,
+          product: loadedProducts[i],
         ),
       ),
     );
